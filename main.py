@@ -10,13 +10,12 @@ import torch
 
 app = FastAPI()
 
-# Mount static folder
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# Templates
+
 templates = Jinja2Templates(directory="templates")
 
-# Load pre-trained model
+
 model = VisionEncoderDecoderModel.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 processor = ViTImageProcessor.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
 tokenizer = AutoTokenizer.from_pretrained("nlpconnect/vit-gpt2-image-captioning")
