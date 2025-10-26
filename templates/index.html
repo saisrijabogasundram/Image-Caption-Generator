@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h2>Interactive Image Caption Generator</h2>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="files" multiple required>
+        <button type="submit">Generate Captions</button>
+    </form>
+
+    {% if images %}
+    <div class="gallery">
+        {% for img_data, caption in images %}
+        <div class="card">
+            <img src="data:image/png;base64,{{ img_data }}" alt="Uploaded Image">
+            <div class="caption">{{ caption }}</div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</body>
+</html>

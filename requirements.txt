@@ -1,0 +1,6 @@
+Transformers
+torch
+Pillow
+fastapi 
+uvicorn 
+# 💡 Why: These packages are required for FastAPI (API), PyTorch (model backend), Hugging Face Transformers (image captioning), and Pillow (image processing).
