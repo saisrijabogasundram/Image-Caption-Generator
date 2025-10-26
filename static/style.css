@@ -1,4 +1,4 @@
-/* Page layout */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f6f8;
@@ -6,12 +6,12 @@ body {
     padding: 20px;
 }
 
-/* Heading */
+
 h2 {
     color: #007bff;
 }
 
-/* Form */
+
 form input[type="file"] {
     padding: 10px;
     margin-right: 10px;
@@ -32,7 +32,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Gallery grid layout */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -40,7 +40,6 @@ button:hover {
     margin-top: 30px;
 }
 
-/* Card style */
 .card {
     background-color: white;
     padding: 15px;
@@ -48,13 +47,11 @@ button:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Image in card */
 .card img {
     max-width: 100%;
     border-radius: 10px;
 }
 
-/* Caption */
 .caption {
     margin-top: 10px;
     font-weight: bold;
